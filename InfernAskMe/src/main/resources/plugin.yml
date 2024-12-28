@@ -1,0 +1,6 @@
+name: InfernAskMe
+version: '${project.version}'
+main: org.infernworld.infernaskme.InfernAskMe
+api-version: '1.16'
+commands:
+  ask: {}
