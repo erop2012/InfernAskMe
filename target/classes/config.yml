@@ -1,0 +1,41 @@
+# Плагин "InfernAskMe" Версия плагина: 1.1v
+# Дата первого релиза: 28.12.2024
+# Разработчик (По всем вопросам) -> Егор Татаркин (Ник в майне: EG_SH_NOT) vk.com/egortatarkin : @theegorhick (Telegram)
+#
+# Канал Великого Егшота -> t.me/egashotina
+
+# Для юза RGB Colors использовать символ: "§"
+
+# Настройка инвентаря
+inventory:
+  title: "Задайте вопрос!" # Название меню обязательное!
+  size: 27 # Размер
+  item: # Предметы в инвенторе
+    for-items-material: MAGENTA_STAINED_GLASS_PANE # Декор
+    enchant: true # Зачаровать все декор предметы?
+    for-items: # Расположение декор предметов по слотам
+      - 0
+      - 8
+      - 18
+      - 26
+    name: "Нажми на меня чтоб задать вопрос" # Название предмета, по которому игроки будут кликать для отправки запроса :))
+    material: LIME_WOOL # Материал предмета
+    slot: 13 # Слот
+    lore: # Описание
+      - "Кликай че смотришь?"
+
+
+setting:
+  permission: "infernaskme.message" # Право для хэлпера (Чтоб тот получал вопрос игрока)
+  permission-reload: "infernaskme.reload" # Право для команды /ask reload
+  sound-to: ENTITY_EXPERIENCE_ORB_PICKUP # Сообщение для модерации
+  sound-me: ITEM_TRIDENT_THUNDER # Сообщение для игрока который отправил вопрос
+
+# Сообщение
+message:
+  accept: "запрос отправлен!"
+  recive: "Игрок %player% отправил вопрос %message"
+  ask-me: "Напишите ваш запрос в чат!"
+  config-reload: "Конфиг перезагружен!"
+  config-reload-perms: "Нет прав!"
+
