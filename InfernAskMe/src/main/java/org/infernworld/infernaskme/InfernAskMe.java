@@ -2,6 +2,7 @@ package org.infernworld.infernaskme;
 
 import lombok.Getter;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.infernworld.infernaskme.commands.Commands;
 import org.infernworld.infernaskme.listener.Events;
@@ -31,6 +32,10 @@ public final class InfernAskMe extends JavaPlugin {
         getLogger().info("§F ");
     }
 
+    public static void reloadCfg() {
+        InfernAskMe.getPlugin().reloadConfig();
+        Bukkit.getLogger().info("§F Конфиг §x§0§8§F§B§0§Fперезагружен! ✔");
+    }
     @Override
     public void onDisable() {
         getLogger().info(RGBcolors.translate("§F "));

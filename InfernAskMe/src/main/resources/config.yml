@@ -27,10 +27,15 @@ inventory:
 
 setting:
   permission: "infernaskme.message" # Право для хэлпера (Чтоб тот получал вопрос игрока)
+  permission-reload: "infernaskme.reload" # Право для команды /ask reload
+  sound-to: ENTITY_EXPERIENCE_ORB_PICKUP # Сообщение для модерации
+  sound-me: ITEM_TRIDENT_THUNDER # Сообщение для игрока который отправил вопрос
 
 # Сообщение
 message:
   accept: "запрос отправлен!"
   recive: "Игрок %player% отправил вопрос %message"
   ask-me: "Напишите ваш запрос в чат!"
+  config-reload: "Конфиг перезагружен!"
+  config-reload-perms: "Нет прав!"
 

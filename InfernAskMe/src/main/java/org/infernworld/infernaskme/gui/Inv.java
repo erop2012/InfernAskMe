@@ -28,7 +28,7 @@ public class Inv implements InventoryHolder {
             ItemStack items = new ItemStack(Material.valueOf(material));
 
             val dekorMeta = items.getItemMeta();
-            boolean ench = InfernAskMe.plugin.getConfig().getBoolean("enchant");
+            boolean ench = InfernAskMe.plugin.getConfig().getBoolean("inventory.item.enchant");
             if (ench) {
                 dekorMeta.addEnchant(Enchantment.LUCK, 1, true);
                 dekorMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

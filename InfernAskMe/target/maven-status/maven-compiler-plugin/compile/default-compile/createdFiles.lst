@@ -1,5 +1,6 @@
 org\infernworld\infernaskme\InfernAskMe.class
 org\infernworld\infernaskme\util\RGBcolors.class
+org\infernworld\infernaskme\util\SoundUtil.class
 org\infernworld\infernaskme\commands\Commands.class
 org\infernworld\infernaskme\gui\Inv.class
 org\infernworld\infernaskme\listener\Events.class

@@ -13,6 +13,8 @@ import org.infernworld.infernaskme.util.RGBcolors;
 
 import java.util.*;
 
+import static org.infernworld.infernaskme.util.SoundUtil.sound;
+
 public class Events implements Listener {
     private static final String title = InfernAskMe.plugin.getConfig().getString(RGBcolors.translate("inventory.title"));
     private static final Map<UUID, Long> players = new HashMap<>();
@@ -53,7 +55,7 @@ public class Events implements Listener {
 
         List<Player> list = new ArrayList<>();
         list.add(player);
-        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1, -5);
+        sound(player,"setting.sound-me");
         player.sendMessage(Objects.requireNonNull(InfernAskMe.plugin.getConfig().getString(RGBcolors.translate("message.accept"))));
         e.setCancelled(true);
 
@@ -68,7 +70,7 @@ public class Events implements Listener {
             for (Player p : Bukkit.getOnlinePlayers()) {
                 if (p.hasPermission(perms)) {
                     p.sendMessage(RGBcolors.translate(messageRecive));
-                    p.playSound(p.getLocation(), Sound.ITEM_TRIDENT_THUNDER, 1, 3);
+                    sound(player,"setting.sound-to");
                 }
             }
         }
