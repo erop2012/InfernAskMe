@@ -61,9 +61,9 @@ public class Events implements Listener {
         playerConditions.add(message);
 
         val perms = InfernAskMe.plugin.getConfig().getString("setting.permission");
-        val messageRecive = InfernAskMe.plugin.getConfig().getString(RGBcolors.translate("message.recive")
+        val messageRecive = InfernAskMe.plugin.getConfig().getString("message.recive")
                 .replace("%player%", player.getName())
-                .replace("%message", message));
+                .replace("%message", message);
         if (perms != null) {
             for (Player p : Bukkit.getOnlinePlayers()) {
                 if (p.hasPermission(perms)) {
